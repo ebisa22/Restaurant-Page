@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ebisa22/Restaurant-Page#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.5",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",

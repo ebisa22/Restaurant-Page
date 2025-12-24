@@ -1,2 +1,2 @@
-console.log("Hi")
-alert("john");
+import "./style.css";
+

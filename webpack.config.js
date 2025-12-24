@@ -11,7 +11,7 @@ module.exports={
     },
     devtool:"eval-source-map",
     devServer:{
-        watchFiles:["./src/index.js","./src/template.html"],
+        watchFiles:["./src/index.js","./src/template.html","./src/style.css"],
     },
     plugins:[
         new HtmlWebpackPlugin({
@@ -24,6 +24,10 @@ module.exports={
         {
             test:/\.css/i,
             use:["style-loader","css-loader"],
+        },
+        {
+            test:/\.html/i,
+            loader:"html-loader"
         }
       ]
     }
