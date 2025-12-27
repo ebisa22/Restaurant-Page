@@ -19,21 +19,9 @@ module.exports = {
       filename: "index.html",
       chunks: ["main"],
     }),
-    new MiniCssExtractPlugin({
-      filename: "[name].[contenthash].css",
-      chunkFilename: "[id].[contenthash].css",
-    }),
   ],
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
-      {
-        test: /\.scss$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-      },
       {
         test: /\.(png|jpeg|jpg|svg|gif)/i,
         type: "asset/resource",
