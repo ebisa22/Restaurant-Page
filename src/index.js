@@ -1,8 +1,6 @@
 import {homePage} from "./home.js";
 import {contactPage} from "./contact.js";
 import {aboutPage} from "./about.js";
-import "./style.css";
-
 
 const navBar=document.querySelectorAll('nav');
 const content=document.querySelector('#content');
